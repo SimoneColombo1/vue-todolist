@@ -4,3 +4,21 @@
     box-sizing: border-box;
 } 
 
+
+main{
+background-color: rgb(209, 114, 155);
+
+
+
+
+}
+
+header{
+background-color: rgb(125, 125, 207);
+
+}
+h1{
+
+    font-size: 3rem;
+    padding-left: 1rem;
+}
