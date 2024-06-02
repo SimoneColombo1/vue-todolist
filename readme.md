@@ -9,3 +9,8 @@
 >MILESTONE 2
 > Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.MILESTONE 3
 > Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante o premendo il tasto invio, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Creo la struttura nell'html e aggiungo Vue.  creo un array di oggetti con per ognunomun titlo la descrizione e una variable booleana ,creo una funzione collegata ad un bottone che al click cambia la variabile booleana in true sbarrando il testo, creo un  altro bottone con una funzione per rimuovere l'elemento dall'array e un altro pulsante per aggiungere elementi nell array e negli oggetti.
