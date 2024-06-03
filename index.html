@@ -8,7 +8,7 @@
     <title>ToDoList</title>
 </head>
 <body>
-<section class="container">
+
 <header>
     <h1>ToDoList</h1>
 
@@ -19,7 +19,16 @@
 <div class="container">
 
 
+    
 
+ <ul class="lista">
+   <li class="Elementi" v-for="(item,Index) in ToDoList" :key="Index"
+   :class="(item.done === true) ? 'fatto':''"
+    >
+{{item.testo}} <button @click="completato(Index)"></button>
+</li>
+
+ </ul>
 
 
 
@@ -44,12 +53,12 @@
 
 </main>
 
-</section>
+
 
     
     
     
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
-    <script type="text/javascript" src="./JS/"></script>
+    <script  src="./JS/script.js"></script>
 </body>
 </html>
