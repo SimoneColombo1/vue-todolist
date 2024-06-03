@@ -1,25 +1,43 @@
-//?Vue
+//> Vue
+
 const { createApp }= Vue;
 createApp({
 data(){
 
 return{
- ToDoList:[{ titolo:'Spesa',
-             testo:'Pere, Banane, Arancie, Bicarbonato di sodio,Acqua oligominerale senza sali aggiunti, Sale iodato marino',
+ ToDoList:[{ 
+             testo:'Elden ring',
              done:false
  },
  
- {  titolo:'Film da vedere',
-     testo:'la vita è bella, barbie, One Piece Red il film, Mission Impossible 4: protocollo fantasma,Fast & Furios: tokyo drift, la storia infinita ' ,
+ {  
+     testo:'sekiro' ,
      done:false
  },
 
- {  titolo: 'giochi da giocare',
-    testo: 'elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,elden Ring shadown of the erdtree,',
+ {  
+    testo: 'persona 3 reload',
     done:false
 
 
- }
+ },
+ {  
+   testo: 'call of cthulu',
+   done:false
+
+
+},
+
+
+
+{  
+   testo: 'catherine full body',
+   done:false
+
+
+}
+
+
 
  
 
@@ -42,6 +60,27 @@ return{
 
 
 
+},
+
+methods:{
+   //< done
+   completato: function(itemIndex){
+   this.ToDoList[itemIndex].done= !this.ToDoList[itemIndex].done;
+   console.log(this.ToDoList[itemIndex].done);
+   
+   
+   }
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -52,6 +91,4 @@ return{
 
 
 
-
-
-})
+}).mount('#app')
