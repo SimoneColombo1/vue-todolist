@@ -69,8 +69,16 @@ methods:{
    console.log(this.ToDoList[itemIndex].done);
    
    
-   }
+   },
 
+   //$ remove
+   cancella:function(GameIndex){
+   
+      this.ToDoList.splice(GameIndex,1);
+
+
+   }
+//!add
 
 
 

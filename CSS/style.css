@@ -6,7 +6,7 @@
 
 
 main{
-background-color: rgb(209, 114, 155);
+background-color: rgb(76, 146, 92);
 height: 90vh;
 padding-top: 1rem;
 
@@ -15,7 +15,7 @@ padding-top: 1rem;
 }
 
 header{
-background-color: rgb(125, 125, 207);
+background-color: rgb(111, 177, 234);
 height: 10vh;
 
 }
@@ -31,11 +31,11 @@ h1{
 ul{
     border: 2px solid black;
     border-radius: 0.5rem;
-    width: 19rem;
+    width: 21rem;
     font-size: 2rem;
     margin-left: 3rem;
     list-style: none;
-    
+    padding-bottom: 3rem;
     align-items: center;
    
 }
@@ -48,4 +48,13 @@ button{
 
 li{
     padding: 0.5rem;
+}
+
+.fa-x{
+    font-size: 1rem;
+    color: red;
+
+}
+.fa-x:hover{
+    color: white;
 }

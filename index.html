@@ -21,15 +21,18 @@
 
     
 
- <ul class="lista">
-   <li class="Elementi" v-for="(item,Index) in ToDoList" :key="Index"
+ <ul class="lista" v-if="ToDoList.length > 0">
+   
+    <li class="Elementi" v-for="(item,Index) in ToDoList" :key="Index"
    :class="(item.done === true) ? 'fatto':''"
     >
-{{item.testo}} <button @click="completato(Index)"></button>
+
+
+<i class="fa-solid fa-x"@click="cancella(Index)"></i>    {{item.testo}} <button @click="completato(Index)"></button>
 </li>
 
- </ul>
-
+</ul>
+<span v-else>Vuoto</span>
 
 
 
