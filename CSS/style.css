@@ -58,3 +58,22 @@ li{
 .fa-x:hover{
     color: white;
 }
+
+.aggiungo{
+    margin: 3rem 3rem;
+    font-size: 2rem;
+    border: solid white 1px;
+    background-color: rgb(164, 192, 226);
+    width: 33rem;
+    padding: 2rem;
+}
+
+input{
+    margin-left: 0.5rem ;
+   
+}
+
+.fa-notes-medical{
+    margin-left: 1rem;
+
+}

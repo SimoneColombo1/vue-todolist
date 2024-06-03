@@ -10,7 +10,7 @@
 <body>
 
 <header>
-    <h1>ToDoList</h1>
+    <h1>Giochi Che Devo Ancora Giocare</h1>
 
 </header>
 <main>
@@ -33,7 +33,12 @@
 
 </ul>
 <span v-else>Vuoto</span>
+<div class="aggiungo">
+<label for="">Aggiungi un gioco</label>
+<input type="text" id="nuovo" v-model="nuovo" @keyup.enter="aggiungi(nuovo)">
 
+<i class="fa-solid fa-notes-medical" @click="aggiungi(nuovo)"></i>
+</div>
 
 
     

@@ -35,15 +35,14 @@ return{
    done:false
 
 
-}
-
+},
 
 
  
 
- ]
+ ],
 
-
+ nuovo:"",
 
 
 
@@ -77,11 +76,17 @@ methods:{
       this.ToDoList.splice(GameIndex,1);
 
 
-   }
+   },
 //!add
 
 
-
+aggiungi: function(nuovo){
+   const nuovoElemento={
+      testo:nuovo,
+      done:false
+   };
+   this.ToDoList.push(nuovoElemento)
+}
 
 
 
